@@ -1,0 +1,65 @@
+ul.flex {
+    min-width: 940px;
+    margin: 30px;
+    border: 1px solid #000;
+    background-color: #eee;    
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.a {
+    background-color: #ff6347;
+}
+
+.b {
+    background-color: #ff8c00;
+}
+
+.c {
+    background-color: #ffd700;
+}
+
+.d {
+    background-color: #3cb371;
+    font-size: 72px;
+}
+
+.e {
+    background-color: #1e90ff;
+}
+
+.f {
+    background-color: #9370db;
+}
+
+/* ********************* flex ******************* */
+/* Flexbox responds to the content and their natural width first, then it distributes the leftover space. */
+ul.flex {
+    display: flex;
+
+    /* justify-content deals with any leftover spacing on the main axis*/
+    justify-content: flex-start; /* default property */
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+
+    /* align-items property distributes space on the cross axis. The tallest item dfines the height of the whole row and by default all other items will stretch to fit.  */
+    align-items: stretch; /* default property */
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+}
+
+/* center the ul container perfectly on the page  */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
